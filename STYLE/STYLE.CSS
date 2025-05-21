@@ -1,0 +1,261 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+body{
+	background-image: url("imgs/originales/fondo6.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+FF7DAA
+FFC0D9
+FF9CC3
+FF8FBB 
+
+
+
+
+
+border-image{
+	border:solid transparent;
+	border-image: url("imgs/originales/borde1\ \(1\).png") 200 stretch;
+}
+	
+
+
+
+.simple-linear {
+  background: linear-gradient(#e0dadd, #FF8FBB);
+}
+
+.title {
+	background-image: url("imgs/originales/fondo8-crop.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 2rem;
+	font-size: 19.2px;
+}
+
+h1{
+	display: center;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-left: 0px; 
+	margin-right: 0px;
+	color: #FF71A2;
+}
+
+
+
+h2{
+	display: inline-block;
+	text-align: center;
+	padding-left: 78px;
+	padding-right: 77.1px;
+	border-color: #fa669a;
+	color: #FF71A2;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #FF367C;
+	font-family: brush script MT;
+	font-weight: 300;
+	font-size: 35.2px;
+	font-style: bold;
+	background-image: url("imgs/originales/fondo8-crop.PNG");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div{
+	display: center;
+}
+
+
+.imagenestitulo {
+	text-align: center;
+	font-weight: 900;
+	font-size: 35.2px;
+	font-style: bold;
+	
+
+}
+
+.imagenesp{
+	border: 0.0px;
+	margin: 0px;
+	text-align: center;
+	font-style: bold;
+}
+
+.border-image{
+	border: 1.5px solid transparent;
+	border-image: url("imgs/originales/fondo2.PNG") 200 stretch;
+}
+
+button {
+margin-left: auto;
+margin-right: auto;
+
+}
+.Button prueba{
+	font-style: bold;
+	border-color: #FF71A2;
+	font-weight: 200;
+	font-size: 30px;
+	background-image: url("imgs/originales/fondo6.PNG");
+ 	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	height: 57px;
+	font-family: brush script MT;
+	
+}
+
+
+.menu {
+	display: flex;
+	
+}
+
+.menu h2 {
+	cursor: pointer;
+	width: 100%;
+}
+
+.contenedor {
+	display: flex;
+	align-items: center;
+	height: 57px;
+}
+
+.contenedor1 {
+	display: flex;
+	align-items: center;
+	cursor: pointer
+}
+
+.content {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
+#principal {
+text-align: center;
+
+height: 0px;
+}
+
+
+
+
+
+
+
+/* lightbox sin abrir */
+.lightbox {
+	display: none;
+  }
+  
+  /* lightbox abierto */
+  .lightbox:target {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Contenido de Lightbox */
+  .lightbox figcaption {
+	width: 45dvw;
+	position: relative;
+	padding: 10px;
+	background-color: lightpink;
+	font-family: brush script MT;
+	font-style: bold;
+	font-size: 35.2px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+
+  }
+  
+  /* Botón Cerrar */
+  .lightbox .close {
+	position: relative;
+	display: block;
+  }
+  
+  .lightbox .close::after {
+	right: -1rem;
+	top: -1rem;
+	width: 2rem;
+	height: 2rem;
+	position: absolute;
+	display: flex;
+	z-index: 1;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	border-radius: 50%;
+	color: white;
+	content: "×";
+	cursor: pointer;
+  }
+  
+  /* superposición Lightbox */
+  .lightbox .close::before {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,.7);
+	content: "";
+	cursor: default;
+  }
+
+.lightbox .foto {
+	width: 45dvw;
+	height: 35%;
+	position: relative;
+	padding: 3%;
+	background-color: lightpink;
+	font-size: 4dvw;
+	font-style: bold;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.lightbox .foto  button{
+	width: 20dvw;
+	height: 5%;
+	position: relative;
+	padding: 0.5%;
+	background-color: lightpink;
+	font-size: 30.2px;
+	font-style: bold;
+	display: flex;
+	justify-content: space-around;
+	margin: 12px;
+	
+}
